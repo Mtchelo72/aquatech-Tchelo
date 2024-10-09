@@ -11,22 +11,23 @@ body {
 
 :root {
     --tamanho-header: 80px;
-    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    --tamanho-banner: calc(50vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
     --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px); 
-    --tamanho-footer: 65px;
+    --tamanho-footer: 80px;
     
 
 }
 
 .header {
     height:var(--tamanho-header);
-    border-bottom: 2px solid #32b9cd;
+    border-bottom: 5px solid #32b9cd;
 }
 
 .container {
     display: flex;
     width: 80%;
     margin: auto;
+    justify-content: center;
 }
 
 .header .container{
@@ -38,9 +39,15 @@ body {
 
 .header a{
 text-decoration: none;
-color: #e3b062;
+color: #ffffff;
 
 }
+.header .li2{
+    text-decoration: none;
+    color: #e3b062;
+    
+    }
+
 
 .agora {
     font-weight: 800;
@@ -61,7 +68,7 @@ color: #e3b062;
 .titulo {
     color: #32b9cd;
     width: fit-content;
-    font-weight: 800;
+    font-weight: 300;
 }
 
 .banner{
@@ -72,55 +79,83 @@ color: #e3b062;
 
 }
 .banner .container{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
 
 .banner .container p {
-    width: 50%;
+    text-align: center;
+    justify-content: center;
+    width: max-content;
     margin: 0;
     padding: 0;
-    font-size: 36px;
+    font-size: 30px;
 }
+.TextoE{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
 .banner .container span{
+    text-align: end;
     font-weight: 800;
+    font-size: 30px;
 
 }
 
 .social{
     background-color: #e5e5e5;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .social .container .boxes {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    padding: 30px 0;
+    padding: 50px;
 }
+.baixomagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
+    margin-top: 20px;
 }
 
 .box img {
     width: 170px;
+    margin: 10px;
 }
     
 
 /* footer */
 
 .footer {
+    align-items: center;
     background-color: #32b9cd;
     height: var(--tamanho-footer);
     color: #fff;
     font-size: 15px;
-    margin-top: 30px;
+   /* margin-top: 30px;*/
 }
 
 .version {
